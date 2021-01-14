@@ -3,6 +3,8 @@ import { Route, Switch, withRouter } from 'react-router-dom';
 import './App.css';
 import routes from './routes'
 
+import Navbar from './Views/Navbar'
+
 const app = (props) => {
   let routesView = routes.map(elem => {
     return <Route 
@@ -14,6 +16,7 @@ const app = (props) => {
 
   return (
     <div id="app">
+      <Navbar />
       <div className="container" style={{'height': '30px'}}>
         <Switch>
           {routesView}

@@ -1,6 +1,6 @@
 import React from 'react'
 
-import routes from './routes'
+import routes from '../routes'
 
 const navbar = (props) => {
 
